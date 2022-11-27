@@ -1,0 +1,559 @@
+inherited LotteryF: TLotteryF
+  Left = 297
+  Top = 42
+  Caption = #1705#1575#1585#1578' '#1588#1585#1705#1578' '#1583#1585' '#1602#1585#1593#1607' '#1705#1588#1610
+  ClientHeight = 621
+  ClientWidth = 726
+  OldCreateOrder = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage [0]
+    Left = 0
+    Top = 48
+    Width = 726
+    Height = 532
+    Align = alClient
+    Transparent = True
+  end
+  object Label2: TLabel [1]
+    Left = 435
+    Top = 419
+    Width = 56
+    Height = 13
+    Caption = #1605#1583#1604' '#1583#1587#1578#1711#1575#1607
+    FocusControl = DBEdit3
+  end
+  inherited Panel1: TPanel
+    Width = 726
+    Height = 48
+    inherited LblForm: TLabel
+      Left = 602
+      Top = 2
+      Width = 118
+      Caption = #1575#1591#1604#1575#1593#1575#1578' '#1705#1575#1585#1578' '#1602#1585#1593#1607' '#1705#1588#1610
+    end
+    object Label1: TLabel
+      Left = 81
+      Top = 7
+      Width = 31
+      Height = 13
+      Caption = #1705#1583' '#1601#1585#1605
+      FocusControl = DBEdit2
+    end
+    object Label3: TLabel
+      Left = 81
+      Top = 29
+      Width = 21
+      Height = 13
+      Caption = #1578#1575#1585#1610#1582
+    end
+    object lblHelp: TLabel
+      Left = 690
+      Top = 32
+      Width = 29
+      Height = 13
+      Cursor = crHandPoint
+      Caption = #1585#1575#1607#1606#1605#1575
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      OnClick = lblHelpClick
+    end
+    object DBEdit2: TDBEdit
+      Left = 22
+      Top = 3
+      Width = 56
+      Height = 21
+      Color = clInfoBk
+      DataField = 'LotteryID'
+      DataSource = srcLottery
+      TabOrder = 0
+    end
+    object dateMsk: TMaskEdit
+      Left = 22
+      Top = 25
+      Width = 56
+      Height = 21
+      Color = 14548957
+      EditMask = '!99/99/00;1;_'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxLength = 8
+      ParentFont = False
+      TabOrder = 1
+      Text = '  /  /  '
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 124
+      Top = 4
+      Width = 116
+      Height = 18
+      DataSource = srcLottery
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+      TabOrder = 2
+    end
+  end
+  inherited Panel2: TPanel
+    Top = 580
+    Width = 726
+    TabOrder = 12
+    TabStop = True
+    object btnsb: TSpeedButton [0]
+      Left = 243
+      Top = 8
+      Width = 25
+      Height = 25
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFBFBFCEFF2F4E4E8E9D2D2D4CFCED0D9DFDFDBE1E2F2F3F3FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFF5F8F8D3D1D0C0A39FBB847698
+        5239965136B47E6BB69790B4B8B9D9DDE0FDFDFDFFFFFFFFFFFFFFFFFFFFFFFF
+        ECF0F1CCBBB8B5705CB94F35AC4322A5502890340BA32200B82500CB5C48BBAE
+        ACCDD1D4FFFFFFFFFFFFFFFFFFF7F9FACDBCBAB15A49C15137B94E33BD8B7FF9
+        FFFFC5A79C9B2702B92A00CF1D00D95732C4B4ACD6D8DCFFFFFFFBFDFDD6D3D2
+        B76D5CC15035BD5A3DB94E33D2AB9EFFFFFFDECFC5912F04B22C01C22902CE1C
+        00CB604BBEBEC4F8F9F9F3F6F6C3ACA8BC523DBF573CB95640BD543ABA6653CC
+        A99DAA6D4E9D3100A63003B22D02BD2800BB2E0FB89F9CDEE1E3EBEDEECDA7A0
+        CA705FBE593FBD563BBE5439BD7262BDBCB6AE89779B35099C3604A13303A730
+        02A523009A6356C4C8CDDCDFDFB69086D68876CC7C65BE6048C25138BA6D5AB3
+        BEBCAAA6A2974322A53B0EA0380B9D38069C2D00975941B1B7B8E0E3E3C19B90
+        D07F6BCD8772D18572CC7A63C4634CB7887DABB7BAA48F88993F23AC421FA644
+        19A93F19AA705EC3C3C7EDF2F2D9BAB3D08772CB806ACF8373CE8672D08169C6
+        7F6CBCB5AFB9C3C7B58B7EC7715AC97D60C98269B8A297E4E4E7F4F8F8D8C7C6
+        CE8B7FCE806CCC7D6ACD8F80C9A599C1968CCFC4C2C8D5D4CDB0A7D08878D78E
+        7DD79A8ED6CDC9F8F9FAFEFFFFE6E6E7D3B1ABD28B7ACA7560D4A69AEAF4F5E3
+        EDEBE0E5EADAD5D5CA9485D08672D49181D0B0AAE0E2E2FFFFFFFFFFFFF9FBFB
+        E3E2E0D4ABA1D58D7AD28C7CD5A69CD6B2ABD5ACA1CF9382D28571D39082D0AD
+        A4E0DADBFBFCFCFFFFFFFFFFFFFFFFFFF9FBFBE6E5E5D8B7B4CC8F83D28876D6
+        8C77D48D7AD09080CB9488D6BCB8E0DDDDF9FBFCFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFBFBFCEEF1F1D6D0D0D0BAB9D8BDB8D8BCB6C5B1B0D4CDCEEFF1F2FDFE
+        FEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFCFCEFF3F3EA
+        EDEFEBEFF0F1F5F4FBFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+      Visible = False
+      OnClick = btnsbClick
+    end
+    object InsertPnl: TPanel
+      Left = 470
+      Top = 1
+      Width = 255
+      Height = 39
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 1
+      TabStop = True
+      object BitBtn2: TBitBtn
+        Left = 169
+        Top = 6
+        Width = 75
+        Height = 25
+        Action = DataSetInsert1
+        Caption = #1580#1583#1610#1583
+        TabOrder = 0
+      end
+      object BitBtn3: TBitBtn
+        Left = 88
+        Top = 6
+        Width = 75
+        Height = 25
+        Action = DataSetEdit1
+        Caption = #1608#1610#1585#1575#1610#1588
+        TabOrder = 1
+      end
+      object BitBtn4: TBitBtn
+        Left = 7
+        Top = 6
+        Width = 75
+        Height = 25
+        Action = DataSetDelete1
+        Caption = #1581#1584#1601
+        TabOrder = 2
+      end
+    end
+    object okPnl: TPanel
+      Left = 302
+      Top = 1
+      Width = 168
+      Height = 39
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 2
+      TabStop = True
+      Visible = False
+      object BitBtn5: TBitBtn
+        Left = 85
+        Top = 6
+        Width = 75
+        Height = 25
+        Action = DataSetPost1
+        Caption = #1578#1575#1574#1610#1583
+        TabOrder = 0
+      end
+      object BitBtn7: TBitBtn
+        Left = 3
+        Top = 6
+        Width = 75
+        Height = 25
+        Action = DataSetCancel1
+        Caption = #1575#1606#1589#1585#1575#1601
+        TabOrder = 1
+      end
+    end
+    object btnIE: TBitBtn
+      Left = 104
+      Top = 8
+      Width = 129
+      Height = 25
+      Caption = #1583#1585#1610#1575#1601#1578' '#1575#1586' Excel'
+      TabOrder = 3
+      OnClick = btnIEClick
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000FFFFFFFFFFFFFFFF0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000FFFFFFFFFF0000FFFF0000FFFFFF
+        FFFF000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000FFFFFFFFFF0000FFFF0000FFFF0000FFFF00
+        00FFFFFFFFFF0000000000000000000000000000000000000000000000000000
+        00000000000000000000FFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFFFFFFFF00000000000000000000000000000000000000000000
+        000000000000FFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFF0000FFFFFFFFFF000000000000000000000000000000000000
+        0000FFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFF0000FFFF0000FFFFFFFFFF000000000000000000000000FFFF
+        FFFFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFF0000FFFF0000FFFF0000FFFFFFFFFF00000000FFFFFFFFFF00
+        00FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+        00000000000000000000FFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFFFFFFFF00000000000000000000000000000000000000000000
+        00000000000000000000FFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFFFFFFFF00000000000000000000000000000000000000000000
+        00000000000000000000FFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFFFFFFFF00000000000000000000000000000000000000000000
+        00000000000000000000FFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFFFFFFFF00000000000000000000000000000000000000000000
+        00000000000000000000FFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFFFFFFFF00000000000000000000000000000000000000000000
+        00000000000000000000FFFFFFFFFF0000FFFF0000FFFF0000FFFF0000FFFF00
+        00FFFF0000FFFFFFFFFF00000000000000000000000000000000000000000000
+        00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000}
+    end
+  end
+  object dbeSerialID: TDBEdit
+    Left = 16
+    Top = 272
+    Width = 145
+    Height = 19
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Ctl3D = False
+    DataField = 'SerialID'
+    DataSource = srcLottery
+    ParentCtl3D = False
+    TabOrder = 8
+    OnExit = dbeSerialIDExit
+  end
+  object DBEdit3: TDBEdit
+    Left = 263
+    Top = 416
+    Width = 150
+    Height = 19
+    Ctl3D = False
+    DataField = 'ModelCode'
+    DataSource = srcLottery
+    ParentCtl3D = False
+    TabOrder = 7
+  end
+  object DBEdit5: TDBEdit
+    Left = 263
+    Top = 307
+    Width = 150
+    Height = 19
+    BiDiMode = bdRightToLeft
+    Ctl3D = False
+    DataField = 'SellerName'
+    DataSource = srcLottery
+    ParentBiDiMode = False
+    ParentCtl3D = False
+    TabOrder = 4
+  end
+  object DBEdit6: TDBEdit
+    Left = 16
+    Top = 328
+    Width = 145
+    Height = 19
+    Ctl3D = False
+    DataField = 'StoreName'
+    DataSource = srcLottery
+    ParentCtl3D = False
+    TabOrder = 10
+  end
+  object DBEdit7: TDBEdit
+    Left = 519
+    Top = 368
+    Width = 108
+    Height = 19
+    Ctl3D = False
+    DataField = 'BuyerTel'
+    DataSource = srcLottery
+    ParentCtl3D = False
+    TabOrder = 2
+  end
+  object sellEditMask: TMaskEdit
+    Left = 519
+    Top = 335
+    Width = 108
+    Height = 19
+    Ctl3D = False
+    EditMask = '!99/99/00;1;_'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    MaxLength = 8
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 1
+    Text = '  /  /  '
+  end
+  object dbeBuyerTel: TDBEdit
+    Left = 519
+    Top = 400
+    Width = 108
+    Height = 19
+    Ctl3D = False
+    DataField = 'BuyerMob'
+    DataSource = srcLottery
+    ParentCtl3D = False
+    TabOrder = 3
+  end
+  object dbeSellerName: TDBEdit
+    Left = 263
+    Top = 338
+    Width = 150
+    Height = 19
+    BiDiMode = bdRightToLeft
+    Ctl3D = False
+    DataField = 'SellerTel'
+    DataSource = srcLottery
+    ParentBiDiMode = False
+    ParentCtl3D = False
+    TabOrder = 5
+  end
+  object dbeSellerTel: TDBEdit
+    Left = 263
+    Top = 368
+    Width = 150
+    Height = 19
+    BiDiMode = bdRightToLeft
+    Ctl3D = False
+    DataField = 'SellerMob'
+    DataSource = srcLottery
+    ParentBiDiMode = False
+    ParentCtl3D = False
+    TabOrder = 6
+  end
+  object dbeSerialID1: TDBEdit
+    Left = 16
+    Top = 300
+    Width = 145
+    Height = 19
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Ctl3D = False
+    DataField = 'ShopID'
+    DataSource = srcLottery
+    ParentCtl3D = False
+    TabOrder = 9
+    OnExit = dbeSerialIDExit
+  end
+  object dbeStoreName: TDBEdit
+    Left = 16
+    Top = 365
+    Width = 145
+    Height = 19
+    Ctl3D = False
+    DataField = 'ShopTel'
+    DataSource = srcLottery
+    ParentCtl3D = False
+    TabOrder = 11
+  end
+  object dbeBuyerTel1: TDBEdit
+    Left = 519
+    Top = 304
+    Width = 108
+    Height = 19
+    Ctl3D = False
+    DataField = 'BuyerName'
+    DataSource = srcLottery
+    ParentCtl3D = False
+    TabOrder = 13
+  end
+  object qryLottery: TADOQuery
+    Connection = DmF.adoMain
+    CursorType = ctStatic
+    AfterInsert = qryLotteryAfterInsert
+    BeforeEdit = qryLotteryBeforeEdit
+    AfterEdit = qryLotteryAfterEdit
+    BeforePost = qryLotteryBeforePost
+    AfterPost = qryLotteryAfterPost
+    AfterCancel = qryLotteryAfterCancel
+    BeforeDelete = qryLotteryBeforeDelete
+    AfterDelete = qryLotteryAfterDelete
+    AfterScroll = qryLotteryAfterScroll
+    Parameters = <>
+    SQL.Strings = (
+      'select *'
+      'from Lottery')
+    Left = 176
+    Top = 128
+    object qryLotteryLotteryID: TIntegerField
+      DisplayLabel = #1705#1583' '#1601#1585#1605
+      FieldName = 'LotteryID'
+    end
+    object qryLotteryLotteryDate: TWideStringField
+      Alignment = taRightJustify
+      DisplayLabel = #1578#1575#1585#1610#1582' '#1601#1585#1605
+      FieldName = 'LotteryDate'
+      Size = 8
+    end
+    object qryLotterySerialID: TWideStringField
+      Alignment = taRightJustify
+      DisplayLabel = #1587#1585#1610#1575#1604' '#1583#1587#1578#1711#1575#1607
+      FieldName = 'SerialID'
+      Size = 14
+    end
+    object qryLotteryModelCode: TWideStringField
+      Alignment = taRightJustify
+      DisplayLabel = #1605#1583#1604' '#1583#1587#1578#1711#1575#1607
+      FieldName = 'ModelCode'
+      Size = 50
+    end
+    object qryLotterySellDate: TWideStringField
+      Alignment = taRightJustify
+      DisplayLabel = #1578#1575#1585#1610#1582' '#1601#1585#1608#1588
+      FieldName = 'SellDate'
+      Size = 8
+    end
+    object qryLotterySellerName: TWideStringField
+      Alignment = taRightJustify
+      DisplayLabel = #1606#1575#1605' '#1601#1585#1608#1588#1606#1583#1607
+      FieldName = 'SellerName'
+      Size = 50
+    end
+    object qryLotteryStoreName: TWideStringField
+      Alignment = taRightJustify
+      DisplayLabel = #1606#1575#1605' '#1601#1585#1608#1588#1711#1575#1607
+      FieldName = 'StoreName'
+      Size = 50
+    end
+    object qryLotteryBuyerTel: TWideStringField
+      Alignment = taRightJustify
+      DisplayLabel = #1578#1604#1601#1606' '#1582#1585#1610#1583#1575#1585
+      FieldName = 'BuyerTel'
+      Size = 50
+    end
+    object qryLotteryBuyerMob: TWideStringField
+      DisplayLabel = #1605#1608#1576#1575#1610#1604' '#1582#1585#1610#1583#1575#1585
+      FieldName = 'BuyerMob'
+      Size = 11
+    end
+    object qryLotterySellerTel: TWideStringField
+      DisplayLabel = #1578#1604#1601#1606' '#1601#1585#1608#1588#1606#1583#1607
+      FieldName = 'SellerTel'
+      Size = 10
+    end
+    object qryLotterySellerMob: TWideStringField
+      DisplayLabel = #1605#1608#1576#1575#1610#1604' '#1601#1585#1608#1588#1606#1583#1607
+      FieldName = 'SellerMob'
+      Size = 11
+    end
+    object qryLotteryShopID: TWideStringField
+      DisplayLabel = #1705#1583' '#1601#1585#1608#1588#1711#1575#1607
+      FieldName = 'ShopID'
+      Size = 30
+    end
+    object qryLotteryShopTel: TWideStringField
+      DisplayLabel = #1578#1604#1601#1606' '#1601#1585#1608#1588#1711#1575#1607
+      FieldName = 'ShopTel'
+      Size = 10
+    end
+    object qryLotteryBuyerName: TWideStringField
+      FieldName = 'BuyerName'
+      Size = 30
+    end
+  end
+  object srcLottery: TDataSource
+    DataSet = qryLottery
+    OnStateChange = srcLotteryStateChange
+    Left = 168
+    Top = 184
+  end
+  object actLottery: TActionList
+    Left = 56
+    Top = 160
+    object DataSetInsert1: TDataSetInsert
+      Category = 'Dataset'
+      Caption = #1580#1583#1610#1583
+      ShortCut = 113
+    end
+    object DataSetDelete1: TDataSetDelete
+      Category = 'Dataset'
+      Caption = #1581#1584#1601
+    end
+    object DataSetEdit1: TDataSetEdit
+      Category = 'Dataset'
+      Caption = #1608#1610#1585#1575#1610#1588
+      ShortCut = 115
+    end
+    object DataSetPost1: TDataSetPost
+      Category = 'Dataset'
+      Caption = #1578#1575#1574#1610#1583
+      ShortCut = 119
+    end
+    object DataSetCancel1: TDataSetCancel
+      Category = 'Dataset'
+      Caption = #1575#1606#1589#1585#1575#1601
+    end
+  end
+  object qrysB: TADOQuery
+    Connection = DmF.adoMain
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select *'
+      'From SerialNoBank')
+    Left = 296
+    Top = 136
+    object qrysBSerialID: TWideStringField
+      FieldName = 'SerialID'
+      Size = 14
+    end
+    object qrysBModelNo: TWideStringField
+      FieldName = 'ModelNo'
+      Size = 11
+    end
+    object qrysBContainerNo: TWideStringField
+      FieldName = 'ContainerNo'
+      Size = 11
+    end
+    object intgrfldBLottoryID: TIntegerField
+      FieldName = 'LottoryID'
+    end
+    object qrysBSerialDone: TWordField
+      FieldName = 'SerialDone'
+    end
+  end
+end

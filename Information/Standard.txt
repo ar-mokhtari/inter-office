@@ -1,0 +1,28 @@
+Edit :
+   >> date : 
+	.. Colore: $00DDFFDD
+	.. Font Colore: 
+   >> No :
+	.. Colore: 
+	.. Font Colore: 
+   >> Search :
+	.. Colore: $00FFEAD5 
+	.. Font Colore:
+   >> Amount :
+	.. Colore: clInfoBk
+	.. Font Colore: clHotLight
+Combo :
+   >> Lookup :
+	.. Colore: $00B9DCFF
+	.. Font Colore: 
+Memo :
+   >> Address :
+	.. Colore: $00E1F0FF
+	.. Font Colore: clHotLight
+   >> Note :
+	.. Colore: 
+	.. Font Colore: 
+Text :
+   >> Lookup Result :
+	.. Colore: clMoneyGreen
+	.. Font Colore: clGreen

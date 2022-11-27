@@ -1,0 +1,45 @@
+program SteelCenter;
+
+uses
+  Forms,
+  Main in 'Main.pas' {MainF},
+  Dm in 'Dm.pas' {DmF: TDataModule},
+  Tel in 'Tel.pas' {TelF},
+  MdiForm in 'MdiForm.pas' {MdiFormF},
+  TempMdi in 'TempMdi.pas' {TempMdiF},
+  TempNormal in 'TempNormal.pas' {TempNormalF},
+  Pro in 'Pro.pas' {ProF},
+  AboutUs in 'AboutUs.pas' {AboutUsF},
+  Pm in '..\Public\Pm.pas' {PmF},
+  sndkey32 in '..\Public\SNDKEY32.PAS',
+  shamsiDate in '..\Public\shamsiDate.pas',
+  PublicDm in '..\Public\PublicDm.pas' {PublicDmF: TDataModule},
+  Cover in '..\Public\Cover.pas',
+  Login in '..\Public\Login.pas' {LoginF},
+  FormInfo in 'FormInfo.pas' {FormInfoF},
+  Customers in 'Customers.pas' {CustomersF},
+  template0 in '..\Public\template0.pas' {template0F},
+  searchCode_ADO in '..\Public\searchCode_ADO.pas' {searchCode_ADOF},
+  ProCust in 'ProCust.pas' {ProCustF},
+  Operators in 'Operators.pas' {OperatorsF},
+  CedarUnit in '..\Public\CedarUnit.pas',
+  search2 in '..\Public\search2.pas' {search2F},
+  sort2 in '..\Public\sort2.pas' {sort2F},
+  Filters in '..\Public\Filters.pas' {FiltersF},
+  Voucher in 'Voucher.pas' {VoucherF},
+  Invoice in 'Invoice.pas' {InvoiceF},
+  Calculator in '..\Public\Calculator.pas' {CalculatorF},
+  Config in 'Config.pas' {ConfigF};
+
+{$R *.res}
+
+begin
+  AboutUsF.doQuick;
+  Application.Initialize;
+  SetKeyboardFarsi;
+  Application.Title := '„œÌ—Ì  «ÿ·«⁄«  ”—“„Ì‰ Å«ﬂÌ';
+  Application.CreateForm(TPublicDmF, PublicDmF);
+  Application.CreateForm(TDmF, DmF);
+  Application.CreateForm(TMainF, MainF);
+  Application.Run;
+end.
